@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0px;
+    list-style: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.all {
+    width: 1200px;
+    height: 700px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    width: 200px;
+    height: 100%;
+    float: left;
+
+}
+
+.logo img {
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.main {
+    width: 1000px;
+    height: 100%;
+    float: left;
+
+}
+
+.menu {
+    position: relative;
+    top: 30px;
+    float: right;
+
+}
+
+.menu>li {
+    width: 200px;
+    float: left;
+    background-color: brown;
+    text-align: center;
+
+}
+
+.menu>li>a {
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.menu>li:hover {
+    background-color: green;
+}
+
+.sub {
+    width: 200px;
+    z-index: 1;
+    position: relative;
+    display: none;
+}
+
+.sub>li {
+    width: 200px;
+    background-color: hotpink;
+}
+
+.sub>li>a {
+    width: 180px;
+    height: 40px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.sub>li:hover {
+    background-color: green;
+}
+
+.imgslide {
+    width: 1200px;
+    height: 300px;
+    position: relative;
+
+}
+
+.imgslide img {
+    width: 1200px;
+    height: 300px;
+}
+
+.imgslide>a {
+    display: block;
+    position: absolute;
+
+}
+
+.imgtext {
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    left: 350px;
+    top: 125px;
+    background-color: rebeccapurple;
+}
+
+.contents {
+    width: 100%;
+    height: 200px;
+}
+/* 텝 메뉴 만들기 */
+.tabmenu {
+    width: 400px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.tabmenu>li {
+    float: left;
+    width: 100px;
+    line-height: 30px;
+}
+
+.tabmenu>li>a {
+    background: gainsboro;
+    text-align: center;
+}
+
+.tabmenu>li>a:hover {
+    font-weight: bold;
+}
+
+.tabmenu>li.active>a {
+    background: white;
+}
+
+.tabmenu>li div {
+    position: absolute;
+    left: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.tabmenu>li.active div {
+    width: 400px;
+    height: 150px;
+    z-index: 1;
+}
+
+.notice {
+    width: 400px;
+    height: 150px;
+}
+
+.notice li {
+    line-height: 32px;
+}
+
+.notice span {
+    float: right;
+}
+
+.notice li:nth-child(2n) {
+    background: gainsboro;
+}
+/* 텝 메뉴 끝 */
+.c2 {
+    width: 400px;
+    height: 100%;
+    float: left;
+
+}
+.c2 img{
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+.bntext{
+    float: left;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+    left: 810px;
+    top: 450px;
+
+}
+.sctext{
+    float: left;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+    left: 1200px;
+    top: 450px;
+
+}
+.c3 {
+    width: 400px;
+    height: 100%;
+    float: left;
+
+}
+.c3 img{
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+.footer {
+    width: 100%;
+    height: 100px;
+}
+
+.logoo {
+    width: 200px;
+    height: 100%;
+    background-color: aqua;
+    float: left;
+}
+
+.copyright {
+    width: 800px;
+    height: 100%;
+    float: left;
+
+}
+
+.sns {
+    width: 200px;
+    height: 100%;
+    background-color: beige;
+    float: left;
+}
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+#modal.active{
+    display: block;
+}
+.modal_up{
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    left: 40%;
+    top: 30%;
+    border: 3px solid;
+    border-color: #5e1742;
+    background-color: #ffffff;
+}
+.uptitle{
+    margin-top: 30px;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upbody{
+    padding: 30px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.btn{
+    width: 80px;
+    height: 20px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 3px;
+    background: #5e1742;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.logoo img{
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+.sns ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+.sns li{
+    display: inline-block;
+}
+.sns img{
+    width: 45px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.sns img:hover{
+    opacity: 0.5;
+}
