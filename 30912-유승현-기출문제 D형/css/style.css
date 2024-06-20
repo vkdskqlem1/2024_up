@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #333333;
+}
+
+.all {
+    width: 100%;
+    height: 950px;
+}
+
+.header {
+    width: 200px;
+    float: left;
+    height: 850px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.logo img {
+    width: 160px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* 메인메뉴 시작 */
+.main {
+    width: 100%;
+    height: 750px;
+    background-color: gray;
+}
+
+.menu>li {
+    width: 190px;
+    float: left;
+}
+
+.menu>li>a {
+    width: 190px;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+}
+
+.menu>li>a:hover {
+    background-color: green;
+}
+
+.sub {
+    z-index: 1;
+    display: none;
+}
+
+.sub>li>a {
+    width: 180px;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+}
+
+.sub>li>a:hover {
+    background-color: black;
+}
+
+.log>ul li {
+    float: left;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.log>ul li:hover {
+    font-weight: bold;
+}
+/* 메인메뉴 끝 */
+.imgslide {
+    width: calc(100% - 200px);
+    height: 400px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.imgslide img{
+    width: 200vh;
+    height: 400px;
+    object-fit: cover;
+}
+.slidelist{
+    width: 600vh;
+}
+.slidelist ul li{
+    width: 200vh;
+    float: left;
+}
+.slidelist span{
+    font-size: 25px;
+    margin-top: 150px;
+    margin-left: 40%;
+    width: 500px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contents {
+    width: calc(100% - 200px);
+    height: 450px;
+    float: left;
+}
+.banner {
+    width: 100%;
+    height: 200px;
+    background-color: bisque;
+    float: left;
+}
+.banner img{
+    width: 200vh;
+    height: 200px;
+    object-fit: cover;
+}
+.tabmenu {
+    width: 100%;
+    height: 250px;
+    float: left;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+}
+
+.btlogo {
+    width: 200px;
+    height: 100%;
+    background-color: red;
+    float: left;
+}
+
+.btmenu {
+    width: calc(100% - 600px);
+    height: 100%;
+    background-color: aquamarine;
+    float: left;
+}
+
+.sns {
+    width: 400px;
+    height: 100%;
+    background-color: black;
+    float: left;
+}
