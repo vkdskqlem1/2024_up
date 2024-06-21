@@ -1,0 +1,130 @@
+@charset "utf-8";
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: #333333;
+}
+.all{
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    width: 200px;
+    height: calc(100% - 120px);
+    float: left;
+}
+.logo{
+    width: 200px;
+    height: 15%;
+    border-bottom:  20px solid red;
+
+}
+.logo img{
+    width: 200px;
+    height: 13vh;
+    
+}
+.menu{
+    width: 200px;
+    height: 85%;
+    background-color: brown
+}
+.main{
+    position: relative;
+}
+.main>li{
+    width: 200px;
+    float: left;
+}
+.main>li>a{
+    margin-left: 10px;
+    width: 200px;
+    line-height: 5vh;
+    font-weight: bold;
+    color: white;
+}
+.sub{
+    display: none;
+}
+.sub>li>a{
+    line-height: 3vh;
+    padding-left: 20px;
+    width: 180px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+.sub>li>a:hover{
+    background-color: red;
+}
+.contents{
+    float: left;
+    width: 400px;
+    height: calc(100% - 120px);
+}
+.banner{
+    width: 400px;
+    height: 15%;
+}
+.banner a{
+    position: relative;
+}
+.banner span{
+    text-align: center;
+    display: block;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+.banner img{
+    width: 400px;
+    height: 13vh;
+}
+.notice{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 400px;
+    height: 35%;  
+}
+.notice>li{
+    text-align: center;
+    width: 100px;
+    float: left;
+}
+
+.notice>li>a{
+    /* border: 1px solid; */
+    line-height: 33px;
+    background-color: grey;
+}
+.gallery{
+    width: 400px;
+    height: 35%;
+}
+.shortcut{
+    width: 400px;
+    height: 15%;
+}
+.imgslide{
+    float: left;
+    background-color: aqua;
+    width: calc(100% - 200px - 400px);
+    height: calc(100% - 120px);
+}
+.footer{
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-color: firebrick;
+}
