@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #333333;
+}
+
+.all {
+    width: 100%;
+    height: 950px;
+}
+
+.header {
+    width: 200px;
+    float: left;
+    height: 850px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.logo img {
+    width: 160px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* 메인메뉴 시작 */
+.main {
+    width: 100%;
+    height: 750px;
+    background-color: gray;
+}
+
+.menu>li {
+    width: 190px;
+    float: left;
+}
+
+.menu>li>a {
+    width: 190px;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+}
+
+.menu>li>a:hover {
+    background-color: green;
+}
+
+.sub {
+    z-index: 1;
+    display: none;
+}
+
+.sub>li>a {
+    width: 180px;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+}
+
+.sub>li>a:hover {
+    background-color: black;
+}
+
+.log>ul li {
+    float: left;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.log>ul li:hover {
+    font-weight: bold;
+}
+
+/* 메인메뉴 끝 */
+.imgslide {
+    width: calc(100% - 200px);
+    height: 400px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgslide img {
+    width: 200vh;
+    height: 400px;
+    object-fit: cover;
+}
+
+.slidelist {
+    width: 600vh;
+}
+
+.slidelist ul li {
+    width: 200vh;
+    float: left;
+}
+
+.slidelist span {
+    font-size: 25px;
+    margin-top: 150px;
+    margin-left: 40%;
+    width: 500px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contents {
+    width: calc(100% - 200px);
+    height: 450px;
+    float: left;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-color: bisque;
+    float: left;
+}
+
+.banner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tabmenu {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
+    float: left;
+    position: relative;
+}
+
+.tabmenu>li {
+    width: 100px;
+    float: left;
+    line-height: 30px;
+}
+
+.tabmenu>li>a {
+    border: 1px solid grey;
+    background-color: grey;
+    color: black;
+    text-align: center;
+    border-bottom: none;
+}
+
+.tabmenu>li>a:hover {
+    font-weight: bold;
+}
+
+.tabmenu>li.active>a {
+    background-color: white;
+    color: green;
+}
+
+.tabmenu div {
+    left: 0;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+.tabmenu>li.active div {
+    width: calc(100% - 20px);
+    height: 200px;
+    border: 1px solid grey;
+}
+
+.notice li {
+    padding-left: 10px;
+    line-height: 50px;
+    border-bottom: 1px solid;
+}
+
+.notice li:hover {
+    font-weight: bold;
+}
+
+.notice span {
+    float: right;
+    margin-right: 10px;
+}
+
+.gallery li {
+    float: left;
+    margin-left: 20%;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+}
+
+/* 탭 메뉴 끝 */
+#modal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
+
+#modal.active {
+    display: block;
+}
+
+.modal_up {
+    width: 500px;
+    height: 400px;
+    margin-top: 250px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.m1 {
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.m2 {
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.m3 {
+    margin-right: 10px;
+    margin-top: 170px;
+    width: 50px;
+    line-height: 30px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+}
+
+.btlogo {
+    width: 200px;
+    height: 100%;
+    float: left;
+    background-color: grey;
+}
+
+.btlogo img {
+    width: 170px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.btmenu {
+    background-color: grey;
+    width: calc(100% - 600px);
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.sns {
+    background-color: grey;
+    width: 400px;
+    height: 100%;
+    float: left;
+
+}
+
+.sns li {
+    margin-right: 20px;
+}
+
+.sns img {
+    float: right;
+    margin-top: 20px;
+
+}
