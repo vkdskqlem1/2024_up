@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    color: #333333;
+    /* background-color: #ffffff; */
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.all {
+    width: 1200px;
+    height: 700px;
+    border: 1px solid;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: darkgray;
+}
+
+.h1 {
+    width: 1200px;
+    height: 100px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+.logo img {
+    margin-top: 30px;
+}
+
+.menu {
+    width: 1000px;
+    height: 100%;
+    float: left;
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+    float: right;
+}
+
+.main>li {
+    margin-top: 50px;
+    width: 140px;
+    float: left;
+}
+
+.main>li>a {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.main>li>a:hover {
+    background-color: white;
+    color: black;
+}
+
+.sub {
+    display: none;
+}
+
+.sub>li>a {
+    text-align: center;
+    background-color: black;
+    line-height: 37.5px;
+    color: white;
+}
+
+.sub>li>a:hover {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+.imgslide {
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slidelist img {
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+}
+
+.slidelist span {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-top: 125px;
+    margin-left: 400px;
+    line-height: 60px;
+}
+
+.subimg {
+    width: 1200px;
+    position: absolute;
+    height: 150px;
+    background-color: black;
+    display: none;
+}
+
+.contents {
+    width: 1200px;
+    height: 200px;
+}
+
+.tabmenu {
+    width: 400px;
+    height: 200px;
+    float: left;
+    position: relative;
+}
+
+.tabmenu>li {
+    width: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.tabmenu>li>a {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tabmenu div {
+    height: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.tabmenu>li.active div {
+    width: 380px;
+    height: 130px;
+}
+
+.notice li:first-child {
+    border-top: 3px solid orangered;
+}
+
+.notice li {
+    line-height: 32px;
+}
+
+.notice li:nth-child(2n) {
+    background-color: orangered;
+}
+
+.notice li:hover {
+    font-weight: bold;
+}
+
+.notice span {
+    float: right;
+    margin-right: 10px;
+}
+
+.c2 {
+    width: 400px;
+    height: 200px;
+    /* background-color: blue; */
+    float: left;
+}
+
+.c2>li {
+    width: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.c2>li>a {
+    margin-right: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gallery {
+    width: 380px;
+    height: 130px;
+    border-top: 3px solid orangered;
+}
+
+.gallery li {
+    float: left;
+}
+
+.gallery img {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.c3 {
+    width: 400px;
+    height: 200px;
+    /* background-color: aqua; */
+    float: left;
+}
+
+.c3 img {
+    margin-top: 10px;
+    width: 400px;
+    height: 180px;
+}
+
+.sctext {
+    position: absolute;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 100px;
+    line-height: 50px;
+}
+
+.footer {
+    width: 1200px;
+    height: 100px;
+    background-color: grey;
+}
+
+.copy {
+    width: 1000px;
+    height: 100%;
+    float: left;
+}
+
+.copy li {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.btmenu {
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+
+.sns {
+    width: 100%;
+    height: 50%;
+
+}
+
+.sns img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btlogo {
+    width: 100%;
+    height: 50%;
+}
+
+.btlogo select {
+    width: 180px;
+    margin-left: 10px;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.modal_up {
+    margin-top: 150px;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: white;
+}
+
+.m1 {
+    margin-right: 260px;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.m2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 30px;
+}
+
+.m3 {
+    margin-top: 160px;
+    float: right;
+    width: 100px;
+    margin-right: 10px;
+    line-height: 30px;
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+}
